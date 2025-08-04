@@ -1,0 +1,5 @@
+{
+    "token": "2396d525eda355d0df248fb34af61b59",
+    "endpoint": "https://moodle.gla.ac.uk/webservice/rest/server.php",
+    "dsn": "root:purple@(127.0.0.1:3310)/inspector?parseTime=True"
+}

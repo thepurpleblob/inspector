@@ -1,0 +1,15 @@
+services:
+      mysql:
+        image: mariadb:lts
+        environment:
+            MYSQL_ROOT_PASSWORD: 'purple'
+            MYSQL_USER: 'inspectoruser'
+            MYSQL_PASSWORD: 'inspectorpass'
+            MYSQL_DATABASE: 'inspector'
+        restart: always
+        volumes:
+            - mysqldata:/var/lib/mysql
+        ports:
+            - 3310:3306
+volumes:
+    mysqldata: {}
