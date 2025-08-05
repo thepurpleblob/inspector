@@ -7,12 +7,12 @@
       </v-toolbar-title>
     </v-app-bar>
 
-    <v-navigation-drawer 
+    <v-navigation-drawer
       @update:model-value="drawer_update"
       v-model="drawerstate"
 
       >
-      <v-list-item 
+      <v-list-item
         title="Moodle inspector"
         subtitle="Menu"
         ></v-list-item>
@@ -29,7 +29,9 @@
           height="200"
           rounded="lg"
           width="100%"
-        ></v-sheet>
+        >
+          <LoadAverage></LoadAverage>
+        </v-sheet>
       </v-container>
     </v-main>
   </v-layout>
@@ -37,6 +39,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import LoadAverage from './components/LoadAverage.vue';
 import UofG from './assets/uofg.png'
 import NavList from '@/components/NavList.vue';
 

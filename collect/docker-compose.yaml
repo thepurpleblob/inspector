@@ -6,6 +6,7 @@ services:
             MYSQL_USER: 'inspectoruser'
             MYSQL_PASSWORD: 'inspectorpass'
             MYSQL_DATABASE: 'inspector'
+            TZ: 'Europe/London'
         restart: always
         volumes:
             - mysqldata:/var/lib/mysql
