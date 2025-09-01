@@ -30,7 +30,7 @@
           rounded="lg"
           width="100%"
         >
-          <LoadAverage></LoadAverage>
+          <DashboardLoads></DashboardLoads>
         </v-sheet>
       </v-container>
     </v-main>
@@ -42,6 +42,7 @@ import { ref } from 'vue';
 import LoadAverage from './components/LoadAverage.vue';
 import UofG from './assets/uofg.png'
 import NavList from '@/components/NavList.vue';
+import InspectorDashboard from './views/DashboardLoads.vue';
 
 const drawerstate = ref(null)
 
